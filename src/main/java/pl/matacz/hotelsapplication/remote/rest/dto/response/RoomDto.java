@@ -1,13 +1,13 @@
 package pl.matacz.hotelsapplication.remote.rest.dto.response;
 import java.math.BigDecimal;
-public class RoomsDto {
+public class RoomDto {
     private Integer id;
     private Integer beds;
     private BigDecimal price;
-    public RoomsDto() {
+    public RoomDto() {
     }
 
-    public RoomsDto(Integer id, Integer beds, BigDecimal price) {
+    public RoomDto(Integer id, Integer beds, BigDecimal price) {
         this.id = id;
         this.beds = beds;
         this.price = price;

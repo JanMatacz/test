@@ -1,17 +1,17 @@
 package pl.matacz.hotelsapplication.remote.rest.dto.response;
 import pl.matacz.hotelsapplication.domain.model.ReservationStatusType;
-import pl.matacz.hotelsapplication.remote.rest.dto.request.PersonDto;
+import pl.matacz.hotelsapplication.remote.rest.dto.request.PersonReservationDto;
 import pl.matacz.hotelsapplication.remote.rest.dto.request.RoomsReservationDto;
 import java.util.List;
-public class ReservationsDto {
+public class ReservationDto {
     private Integer id;
     private ReservationStatusType status;
     private List<RoomsReservationDto> rooms;
-    private PersonDto person;
-    public ReservationsDto(){
+    private PersonReservationDto person;
+    public ReservationDto(){
     }
 
-    public ReservationsDto(Integer id, ReservationStatusType status, List<RoomsReservationDto> rooms, PersonDto person) {
+    public ReservationDto(Integer id, ReservationStatusType status, List<RoomsReservationDto> rooms, PersonReservationDto person) {
         this.id = id;
         this.status = status;
         this.rooms = rooms;
@@ -42,11 +42,11 @@ public class ReservationsDto {
         this.rooms = rooms;
     }
 
-    public PersonDto getPerson() {
+    public PersonReservationDto getPerson() {
         return person;
     }
 
-    public void setPerson(PersonDto person) {
+    public void setPerson(PersonReservationDto person) {
         this.person = person;
     }
 }

@@ -1,14 +1,14 @@
 package pl.matacz.hotelsapplication.remote.rest.dto.response;
 import java.util.List;
-public class HotelsDto {
+public class HotelDto {
     private Integer id;
     private String name;
-    private List<RoomsDto> rooms;
-    public HotelsDto() {
+    private List<RoomDto> rooms;
+    public HotelDto() {
 
     }
 
-    public HotelsDto(Integer id, String name, List<RoomsDto> rooms) {
+    public HotelDto(Integer id, String name, List<RoomDto> rooms) {
         this.id = id;
         this.name = name;
         this.rooms = rooms;
@@ -30,11 +30,11 @@ public class HotelsDto {
         this.name = name;
     }
 
-    public List<RoomsDto> getRooms() {
+    public List<RoomDto> getRooms() {
         return rooms;
     }
 
-    public void setRooms(List<RoomsDto> rooms) {
+    public void setRooms(List<RoomDto> rooms) {
         this.rooms = rooms;
     }
 }

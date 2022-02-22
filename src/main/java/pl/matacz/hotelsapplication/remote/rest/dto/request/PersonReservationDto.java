@@ -1,13 +1,16 @@
 package pl.matacz.hotelsapplication.remote.rest.dto.request;
-public class PersonDto {
+
+import java.math.BigDecimal;
+
+public class PersonReservationDto {
     private String name;
-    private String phone;
+    private BigDecimal phone;
     private String address;
     private Integer floor;
-    public PersonDto() {
+    public PersonReservationDto() {
     }
 
-    public PersonDto(String name, String phone, String address, Integer floor) {
+    public PersonReservationDto(String name, BigDecimal phone, String address, Integer floor) {
         this.name = name;
         this.phone = phone;
         this.address = address;
@@ -22,11 +25,11 @@ public class PersonDto {
         this.name = name;
     }
 
-    public String getPhone() {
+    public BigDecimal getPhone() {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public void setPhone(BigDecimal phone) {
         this.phone = phone;
     }
 
